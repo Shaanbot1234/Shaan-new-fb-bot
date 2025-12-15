@@ -56,7 +56,7 @@ module.exports.run = async function ({ api, message, args }) {
             msg += `👤 ${video.author.name} | 👁 ${video.views}\n\n`;
         }
 
-        msg += "👉 Reply with the number to download.";
+        msg += "👉 Kisi Ek number ko reply karo our download karo.";
 
         api.sendMessage(
             {
@@ -184,7 +184,8 @@ module.exports.handleReply = async function ({ api, message, replyData }) {
         const formattedViews = video.views ? new Intl.NumberFormat('en-US', { notation: "compact", compactDisplay: "short" }).format(video.views) : "N/A";
 
         // Construct info message
-        let infoMsg = `🎬 Title: ${finalTitle}\n`;
+        let infoMsg = `🎬 »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝑺𝑯𝑨𝑨𝑵 𝑲𝑯𝑨𝑵««
+          🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰👉 Title: ${finalTitle}\n`;
         if (video.timestamp) infoMsg += `⏱ Duration: ${video.timestamp}\n`;
         if (video.author && video.author.name) infoMsg += `👤 Channel: ${video.author.name}\n`;
         if (video.views) infoMsg += `👀 Views: ${formattedViews}\n`;
